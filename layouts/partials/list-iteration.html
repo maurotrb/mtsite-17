@@ -1,0 +1,29 @@
+{{ $baseURL := .Site.BaseURL }}
+<aside class="section">
+  <div class="level box">
+    <div class="level-left">
+      {{ with .NextInSection }}
+      <p class="level-item">
+        <a href="{{ .Permalink }}">
+          <span class="icon is-small">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <span>{{ .Title }}</span>
+        </a>
+      </p>
+      {{ end }}
+    </div>
+    <div class="level-left">
+      {{ with .PrevInSection }}
+      <p class="level-item">
+        <a href="{{ .Permalink }}">
+          <span>{{ .Title }}</span>
+          <span class="icon is-small">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </a>
+      </p>
+      {{ end }}
+    </div>
+  </div>
+</aside>

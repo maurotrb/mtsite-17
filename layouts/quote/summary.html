@@ -1,0 +1,39 @@
+<div class="media">
+  <div class="media-left">
+    <span class="icon is-medium">
+      <i class="fa fa-lg fa-quote-left"></i>
+    </span>
+  </div>
+  <div class="media-content">
+    <header>
+      <h2 class="title is-4"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="subtitle is-6">
+        <span>{{ .Date.Format "2006-01-02" }} — {{ i18n "quote" }}</span>
+        {{ partial "tagline" .}}
+      </p>
+    </header>
+    <section class="section">
+      <div class="content is-small">
+        <blockquote>
+          <p>{{ .Content }}</p>
+          <footer>
+            <cite>
+              <span class="author">{{ .Params.author }}</span>
+              {{ if isset .Params "source" }}
+              — {{ .Params.source }}
+              {{ else if isset .Params "link" }}
+              — <a href="{{ .Params.link }}">
+                {{ if isset .Params "source_link_title" }}
+                {{ .Params.source_link_title | markdownify }}
+                {{ else }}
+                {{ .Params.link }}
+                {{ end }}
+              </a>
+              {{ end }}
+            </cite>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+  </div>
+</div>

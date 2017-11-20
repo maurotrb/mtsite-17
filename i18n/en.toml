@@ -1,0 +1,35 @@
+[about_me]
+other = "About me"
+
+[article_wordcount]
+other = "Article of {{ .FuzzyWordCount }} words"
+
+[categories]
+other = "Categories"
+
+[project]
+other = "Project"
+
+[quote]
+other = "Quote"
+
+[read_more]
+other = "Read more..."
+
+[short_about]
+other = "I'm __Mauro Taraborelli__, an IT Business Analyst and Project Manager, from Italy. Contact me by [email](mail:mauro@maurotaraborelli.com)."
+
+[source_code_license]
+other = "Code examples licensed"
+
+[tags]
+other = "Explore this site"
+
+[translation]
+other = "Available in"
+
+[website_content_license]
+other = "Content licensed"
+
+[website_source]
+other = "Source available at"

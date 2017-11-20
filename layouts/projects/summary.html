@@ -1,0 +1,23 @@
+<div class="media">
+  <div class="media-left">
+    <span class="icon is-medium">
+      <i class="fa fa-lg fa-code"></i>
+    </span>
+  </div>
+  <div class="media-content">
+    <header>
+      <h2 class="title is-4"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="subtitle is-6">
+        {{ partial "tagline" .}}
+      </p>
+    </header>
+    <section>
+      <div class="content is-small">
+        {{ .Summary }}
+        {{ if .Truncated }}
+        <a href="{{ .RelPermalink }}">{{ i18n "read_more" }}</a>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+</div>

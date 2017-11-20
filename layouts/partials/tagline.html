@@ -1,0 +1,7 @@
+{{ $baseURL := .Site.BaseURL }}
+{{ range .Params.tags }}
+<a class="tag is-rounded" href="{{ $baseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+{{ end }}
+{{ range .Params.etichette }}
+<a class="tag is-rounded" href="{{ $baseURL }}it/etichette/{{ . | urlize }}">{{ . }}</a>
+{{ end }}

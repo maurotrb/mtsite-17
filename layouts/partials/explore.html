@@ -1,0 +1,11 @@
+<section class="section" id="tags">
+  <h1 class="title is-6">{{ i18n "tags" }}</h1>
+  <div class="tags">
+    {{ range $key, $value := .Site.Taxonomies.tags.ByCount }}
+    <a class="tag is-info is-rounded" href="/tags/{{ $value.Name | urlize }}">{{ $value.Name }} ({{ $value.Count }})</a>
+    {{ end }}
+    {{ range $key, $value := .Site.Taxonomies.etichette.ByCount }}
+    <a class="tag is-info is-rounded" href="/it/etichette/{{ $value.Name | urlize }}">{{ $value.Name }} ({{ $value.Count }})</a>
+    {{ end }}
+  </div>
+</section>

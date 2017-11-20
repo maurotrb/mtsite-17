@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+  <div class="columns">
+    <div class="column is-four-fifths">
+      <main class="section">
+        <header>
+          <h1 class="title is-2">{{ .Data.Singular | humanize }}: {{ .Title }} ({{ len .Data.Pages }})</h1>
+          {{ range .Data.Pages.GroupBy "Section" }}
+          <h2 class="title is-3">{{ .Key | humanize }} ({{ len .Pages }})</h2>
+        </header>
+        {{ range .Pages }}
+        <article class="section">
+          {{ .Render "summary"}}
+        </article>
+        {{ end }}
+        {{ end }}
+      </main>
+    </div>
+    <div class="column">
+      <aside id="sidebar">
+        {{ partial "mini-about.html" . }}
+        {{ partial "explore.html" . }}
+      </aside>
+    </div>
+  </div>
+</div>
+{{ end }}

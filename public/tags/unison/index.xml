@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unison on Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/tags/unison/</link>
+    <description>Recent content in Unison on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 Feb 2013 00:01:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.maurotaraborelli.com/tags/unison/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Personal backup strategy</title>
+      <link>https://www.maurotaraborelli.com/blog/2013/02/08/personal-backup-strategy/</link>
+      <pubDate>Fri, 08 Feb 2013 00:01:00 +0100</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/blog/2013/02/08/personal-backup-strategy/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
+
+&lt;p&gt;I use a Windows desktop at work, another one at home, and a Linux laptop during commuting.
+The laptop is for personal projects and the home desktop is for photo management and retouching.
+Many of the files are shared, so I have to synchronize them among computers.
+Moreover I want to have an up-to-date copy of the files in my home NAS,
+from where I can make a backup.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="container">
+  <div class="columns">
+    <div class="column is-four-fifths">
+      <main class="section">
+        <header>
+          <h1 class="title is-2">{{ .Title }} ({{ len .Data.Pages }})</h1>
+        </header>
+        {{ range .Data.Pages }}
+        <article class="section">
+          {{ .Render "summary"}}
+        </article>
+        {{ end }}
+      </main>
+    </div>
+    <div class="column">
+      <aside id="sidebar">
+        {{ partial "mini-about.html" . }}
+        {{ partial "explore.html" . }}
+      </aside>
+    </div>
+  </div>
+</div>
+{{ end }}

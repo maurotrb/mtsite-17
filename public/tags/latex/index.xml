@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/tags/latex/</link>
+    <description>Recent content in LaTeX on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Sep 2011 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.maurotaraborelli.com/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SoFoBoMo 2011</title>
+      <link>https://www.maurotaraborelli.com/projects/sofobomo-2011/</link>
+      <pubDate>Sun, 11 Sep 2011 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/projects/sofobomo-2011/</guid>
+      <description>&lt;p&gt;Photobook made with LaTeX and XeTeX for SoFoBoMo 2011 (unfortunately it was
+the last year of the contest).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

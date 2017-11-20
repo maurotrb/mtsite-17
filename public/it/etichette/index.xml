@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etichette on Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/it/etichette/</link>
+    <description>Recent content in Etichette on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    
+	<atom:link href="https://www.maurotaraborelli.com/it/etichette/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://www.maurotaraborelli.com/it/etichette/haskell/</link>
+      <pubDate>Tue, 10 Apr 2012 12:59:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/etichette/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Progetto Eulero</title>
+      <link>https://www.maurotaraborelli.com/it/etichette/progetto-eulero/</link>
+      <pubDate>Tue, 10 Apr 2012 12:59:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/etichette/progetto-eulero/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programmazione</title>
+      <link>https://www.maurotaraborelli.com/it/etichette/programmazione/</link>
+      <pubDate>Tue, 10 Apr 2012 12:59:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/etichette/programmazione/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

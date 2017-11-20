@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Foundation on Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/tags/foundation/</link>
+    <description>Recent content in Foundation on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Jun 2014 15:55:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.maurotaraborelli.com/tags/foundation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Photography Portfolio Site: Initial Setup</title>
+      <link>https://www.maurotaraborelli.com/blog/2014/06/27/photography-portfolio-site-initial-setup/</link>
+      <pubDate>Fri, 27 Jun 2014 15:55:23 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/blog/2014/06/27/photography-portfolio-site-initial-setup/</guid>
+      <description>&lt;p&gt;This is the second post about the photography portfolio website project.
+If you want to find out more about the project, you could read the
+&lt;a href=&#34;https://www.maurotaraborelli.com/blog/2014/01/30/photography-portfolio-site-a-new-project/&#34;&gt;first post&lt;/a&gt;.
+In this post I will explain the initial setup of the project, and the creation
+of a bare home page for the site.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photography portfolio site: a new project</title>
+      <link>https://www.maurotaraborelli.com/blog/2014/01/30/photography-portfolio-site-a-new-project/</link>
+      <pubDate>Thu, 30 Jan 2014 14:21:36 +0100</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/blog/2014/01/30/photography-portfolio-site-a-new-project/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m starting a new project to create a photography portfolio web site and I want to
+document its progress in a series of posts. I&amp;rsquo;ll write them for personal reference,
+but I will be glad if they will be useful for someone else.&lt;/p&gt;
+
+&lt;p&gt;This first post is about the rationale for the project and the initial plan.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

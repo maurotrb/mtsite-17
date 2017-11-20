@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/tags/r/</link>
+    <description>Recent content in R on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Jun 2014 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.maurotaraborelli.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reproducible Research Assignment - Project 2</title>
+      <link>https://www.maurotaraborelli.com/projects/reproducible-research-assignment-2/</link>
+      <pubDate>Sat, 21 Jun 2014 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/projects/reproducible-research-assignment-2/</guid>
+      <description>&lt;p&gt;Project of &lt;a href=&#34;https://www.coursera.org/course/repdata&#34;&gt;Reproducible Research course on Coursera&lt;/a&gt;,
+June 2014 edition.&lt;/p&gt;
+
+&lt;p&gt;This project involves exploring the U.S. National Oceanic and Atmospheric Administration&amp;rsquo;s
+(NOAA) storm database to answer the following questions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Across the United States, which types of weather events are most harmful with respect to population health?&lt;/li&gt;
+&lt;li&gt;Across the United States, which types of weather events have the greatest economic consequences?&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting and Cleaning Data Assignment</title>
+      <link>https://www.maurotaraborelli.com/projects/getting-and-cleaning-data-assignment/</link>
+      <pubDate>Thu, 22 May 2014 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/projects/getting-and-cleaning-data-assignment/</guid>
+      <description>&lt;p&gt;Project of &lt;a href=&#34;https://www.coursera.org/course/getdata&#34;&gt;Getting and Cleaning Data course on Coursera&lt;/a&gt;,
+May 2014 edition.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set.
+The goal is to prepare tidy data that can be used for later analysis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Analysis and Statistical Inference Assignment</title>
+      <link>https://www.maurotaraborelli.com/projects/data-analysis-and-statistical-inference-assignment/</link>
+      <pubDate>Fri, 04 Apr 2014 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/projects/data-analysis-and-statistical-inference-assignment/</guid>
+      <description>&lt;p&gt;Project of &lt;a href=&#34;https://www.coursera.org/course/statistics&#34;&gt;Data Analysis and Statistical Inference course on Coursera&lt;/a&gt;,
+February 2014 edition.&lt;/p&gt;
+
+&lt;p&gt;The project studies the relationship between the highest degree earned by United
+States residents and their family income in constant dollars.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Analysis Assignment - Project 2</title>
+      <link>https://www.maurotaraborelli.com/projects/data-analysis-assignment-2/</link>
+      <pubDate>Sun, 08 Dec 2013 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/projects/data-analysis-assignment-2/</guid>
+      <description>&lt;p&gt;Second assignment of &lt;a href=&#34;https://www.coursera.org/course/dataanalysis&#34;&gt;Data Analysis course on Coursera&lt;/a&gt;,
+November 2013 edition.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Analysis Assignment - Project 1</title>
+      <link>https://www.maurotaraborelli.com/projects/data-analysis-assignment-1/</link>
+      <pubDate>Sun, 17 Nov 2013 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/projects/data-analysis-assignment-1/</guid>
+      <description>&lt;p&gt;First assignement of &lt;a href=&#34;https://www.coursera.org/course/dataanalysis&#34;&gt;Data Analysis course on Coursera&lt;/a&gt;,
+November 2013 edition.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+  <div class="columns">
+    <div class="column is-four-fifths">
+      <main class="section">
+        <header>
+          <h1 class="title is-2">{{ .Title }} ({{ len .Data.Terms }})</h1>
+        </header>
+        <section class="section">
+          <div class="tags">
+            {{ $data := .Data }}
+            {{ range $key, $value := .Data.Terms.Alphabetical }}
+            <a class="tag is-info is-rounded is-large" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }} ({{ $value.Count }})</a>
+            {{ end }}
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="column">
+      <aside id="sidebar">
+        {{ partial "mini-about.html" . }}
+        {{ partial "explore.html" . }}
+      </aside>
+    </div>
+  </div>
+</div>
+{{ end }}

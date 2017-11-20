@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/it/projects/</link>
+    <description>Recent content in Projects on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    
+	<atom:link href="https://www.maurotaraborelli.com/it/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HaskDeep</title>
+      <link>https://www.maurotaraborelli.com/it/projects/haskdeep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/projects/haskdeep/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://hackage.haskell.org/package/haskdeep&#34; title=&#34;haskdeep on hackagedb&#34;&gt;HaskDeep&lt;/a&gt;
+è un programma a linea di comando, scritto in Haskell, che calcola l&amp;rsquo;&lt;em&gt;hash&lt;/em&gt; dei
+file scorrendo una struttura di directory in modo ricorsivo.
+Gli &lt;em&gt;hash&lt;/em&gt; calcolati sono salvati su un file e possono essere usati per verificare
+l&amp;rsquo;integrita del file originale o di una sua copia.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

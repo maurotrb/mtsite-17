@@ -1,0 +1,81 @@
+///////////////
+// Google Fonts
+///////////////
+@import url('https://fonts.googleapis.com/css?family=Arizonia')
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono')
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700')
+
+///////////////////////
+// Bulma initial import
+///////////////////////
+@import "bulma/sass/utilities/initial-variables"
+@import "bulma/sass/utilities/functions"
+
+///////////////////
+// My Bulma configs
+///////////////////
+
+// Colors
+$my-primary: hsl(200, 100%, 40%)
+$my-primary-invert: #fff
+$my-info: hsl(20, 100%, 65%)
+$my-info-invert: #fff
+$primary: $my-primary
+$primary-invert: $my-primary-invert
+$info: $my-info
+$info-invert: $my-info-invert
+// Use primary for links
+$link: $primary !default
+$link-invert: $primary-invert !default
+$link-focus-border: $primary !default
+
+// Logo font
+$family-logo: "Arizonia"
+// Font families
+$family-serif: "Libre Baskerville", serif
+$family-monospace: "Oxygen Mono", monospace
+// Use the new serif family
+$family-primary: $family-serif
+
+// Add image dimension of 256px
+$dimensions: 16 24 32 48 64 96 128 256 !default
+
+// Section paddings
+$section-padding: 1.5rem 1rem 1rem
+
+///////////////////////////
+// Import the rest of Bulma
+///////////////////////////
+@import "bulma/sass/utilities/_all"
+@import "bulma/sass/base/_all"
+@import "bulma/sass/elements/box"
+@import "bulma/sass/elements/button"
+@import "bulma/sass/elements/container"
+@import "bulma/sass/elements/content"
+@import "bulma/sass/elements/icon"
+@import "bulma/sass/elements/image"
+@import "bulma/sass/elements/tag"
+@import "bulma/sass/elements/title"
+@import "bulma/sass/elements/other"
+@import "bulma/sass/components/level"
+@import "bulma/sass/components/media"
+@import "bulma/sass/components/navbar"
+@import "bulma/sass/grid/columns"
+@import "bulma/sass/layout/footer"
+@import "bulma/sass/layout/section"
+
+///////////////
+// Other styles
+///////////////
+
+// Site title
+#logo
+  font-size: 2.25rem
+  font-family: $family-logo
+  +mobile
+    font-size: 2rem
+
+// Round image for portrait
+.round-portrait
+  img
+    border-radius: 50%

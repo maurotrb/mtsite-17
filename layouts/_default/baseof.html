@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="{{ .Site.LanguageCode | default "en-us" }}">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23038857-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23038857-1', { 'anonymize_ip': true });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Title }}</title>
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/mtsite.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
+    {{ .Hugo.Generator }}
+  </head>
+  <body>
+    <header id="site-navbar">
+      <nav class="navbar is-fixed-top container">
+        <div class="navbar-brand">
+          <a class="navbar-item" id="logo" href="{{ .Site.LanguagePrefix }}">{{ .Site.Title }}</a>
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+	    {{ range .Site.Menus.main }}
+	    <a class="navbar-item" href="{{ .URL }}">{{ upper .Name }}</a>
+            {{end}}
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="https://www.linkedin.com/in/maurotaraborelli">
+              <span class="icon">
+                <i class="fa fa-lg fa-linkedin"></i>
+              </span>
+            </a>
+            <a class="navbar-item" href="https://github.com/maurotrb">
+              <span class="icon">
+                <i class="fa fa-lg fa-github"></i>
+              </span>
+            </a>
+            <div class="navbar-item buttons has-addons">
+              {{ $currentLanguage := .Site.Language }}
+              {{ range .Site.Languages }}
+              {{ if eq . $currentLanguage }}
+              {{ else }}
+              <a class="button is-primary is-outlined" href="/{{ .Lang }}">
+                <span class="icon is-small">
+                  <i class="fa fa-exchange"></i>
+                </span>
+                <span>{{ .LanguageName }}</span>
+                <span class="icon is-small">
+                  <i class="fa fa-globe"></i>
+                </span>
+              </a>
+              {{ end }}
+              {{end}}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    {{ block "main" . }}
+    <main class="section">
+    </main>
+    {{ end }}
+    <footer class="footer" id="site-footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="content has-text-centered is-small">
+              <p>{{ i18n "source_code_license" }} <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+              <p>{{ i18n "website_content_license" }} <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+              <p>{{ i18n "website_source" }} <a href="https://github.com/maurotrb/mtsite-17">GitHub</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              {{ with .Site.Params.description }}<p>{{ . }}</p>{{ end }}
+              <p>
+                <a href="https://www.linkedin.com/in/maurotaraborelli">
+                  <span class="icon">
+                    <i class="fa fa-lg fa-linkedin"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/maurotrb">
+                  <span class="icon">
+                    <i class="fa fa-lg fa-github"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered is-small">
+              <p>Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://bulma.io">Bulma</a></p>
+              <p><a href="//www.iubenda.com/privacy-policy/8268024" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"></script>
+    <script src="/js/mtsite.js"></script>
+  </body>
+</html>

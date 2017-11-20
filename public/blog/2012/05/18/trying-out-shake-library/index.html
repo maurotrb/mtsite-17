@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23038857-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23038857-1', { 'anonymize_ip': true });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trying out Shake library</title>
+    <meta name="description" content="Mauro Taraborelli&#39;s Personal Site and Blog">
+    <meta name="author" content="Mauro Taraborelli">
+
+    <link rel="stylesheet" href="https://www.maurotaraborelli.com/css/mtsite.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <meta name="generator" content="Hugo 0.30.2" />
+  </head>
+  <body>
+    <header id="site-navbar">
+      <nav class="navbar is-fixed-top container">
+        <div class="navbar-brand">
+          <a class="navbar-item" id="logo" href="">Mauro Taraborelli</a>
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+	    
+	    <a class="navbar-item" href="/blog/">BLOG</a>
+            
+	    <a class="navbar-item" href="/projects/">PROJECTS</a>
+            
+	    <a class="navbar-item" href="/resume/">RESUME</a>
+            
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="https://www.linkedin.com/in/maurotaraborelli">
+              <span class="icon">
+                <i class="fa fa-lg fa-linkedin"></i>
+              </span>
+            </a>
+            <a class="navbar-item" href="https://github.com/maurotrb">
+              <span class="icon">
+                <i class="fa fa-lg fa-github"></i>
+              </span>
+            </a>
+            <div class="navbar-item buttons has-addons">
+              
+              
+              
+              
+              
+              
+              <a class="button is-primary is-outlined" href="/it">
+                <span class="icon is-small">
+                  <i class="fa fa-exchange"></i>
+                </span>
+                <span>Italiano</span>
+                <span class="icon is-small">
+                  <i class="fa fa-globe"></i>
+                </span>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+<div class="container">
+  <div class="columns">
+    <div class="column is-four-fifths">
+      <main class="section">
+        <header>
+          <h1 class="title is-2">Trying out Shake library</h1>
+          <p class="subtitle is-5">
+            2012-05-18 — Article of 700 words
+            
+            
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/programming">Programming</a>
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/haskell">Haskell</a>
+
+
+
+          </p>
+        </header>
+        <section class="section">
+          <div class="content">
+            <p>I had a little repetitive task to automate in my
+<a href="https://github.com/maurotrb/mt-euler">mt-euler</a> project:
+creating a pdf from a series of Literate Haskell files
+using <code>lhs2TeX</code> and <code>xelatex</code>.</p>
+
+<p>Looking for something like make or rake, but written in Haskell,
+I found <a href="http://hackage.haskell.org/package/shake">Shake</a>.</p>
+
+<p>I used it and I was well pleased with the result.</p>
+
+<p></p>
+
+<h2 id="a-little-task-to-automate">A little task to automate</h2>
+
+<p>A few months ago I decided to solve some of the <a href="http://projecteuler.net">Project Euler</a>
+problems using Haskell language.</p>
+
+<p>Since I wanted to write Haskell code and explanation together, I chose to write
+in Literate Haskell with LaTeX style.</p>
+
+<p>I structured the project with a main file <code>hs-euler.lhs</code>, that contains the LaTeX
+preamble and the document structure, and a series of problem specific <code>lhs</code> files
+included in the main file: <code>hs-euler-001.lhs</code>, <code>hs-euler-002.lhs</code>, &hellip;</p>
+
+<p>So I could easily create a nicely formatted pdf file using a sequence of <code>lhs2TeX</code>
+and <code>xelatex</code> commands (I use XeTeX). But invoking those command repeatedly and
+in the right sequence is a tedious and error-prone process. This task was
+a perfect candidate for some sort of automation.</p>
+
+<p>I was looking for something like make or rake, but written in Haskell, and I found
+<a href="http://hackage.haskell.org/package/shake">Shake</a>.</p>
+
+<h2 id="using-shake-library">Using Shake library</h2>
+
+<p>Shake library is well described by its creator
+<a href="http://neilmitchell.blogspot.it/">Neil Mitchell</a>:</p>
+
+<blockquote>
+<p>Shake is a Haskell library for writing build systems - designed as a replacement for make. To use Shake the user writes a Haskell program that imports the Shake library, defines some build rules, and calls shake. Thanks to do notation and infix operators, a simple Shake program is not too dissimilar from a simple Makefile. However, as build systems get more complex, Shake is able to take advantage of the excellent abstraction facilities offered by Haskell and easily support much larger projects.</p>
+</blockquote>
+
+<p>After reading the documentation, looking at the source code and
+searching on the web, I came out with the following build file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">import</span> Development.Shake
+<span style="color:#66d9ef">import</span> Development.Shake.FilePath
+
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">shake</span> <span style="color:#a6e22e">shakeOptions</span> <span style="color:#f92672">$</span> <span style="color:#66d9ef">do</span>
+         <span style="color:#a6e22e">want</span> [<span style="color:#e6db74">&#34;hs-euler.pdf&#34;</span>]
+         <span style="color:#e6db74">&#34;*.pdf&#34;</span> <span style="color:#f92672">*&gt;</span> <span style="color:#a6e22e">\out</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+           <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tex</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">replaceExtension</span> <span style="color:#a6e22e">out</span> <span style="color:#e6db74">&#34;tex&#34;</span>
+           <span style="color:#a6e22e">need</span> [<span style="color:#a6e22e">tex</span>]
+           <span style="color:#a6e22e">system&#39;</span> <span style="color:#e6db74">&#34;xelatex&#34;</span> [<span style="color:#a6e22e">tex</span>]
+           <span style="color:#a6e22e">system&#39;</span> <span style="color:#e6db74">&#34;xelatex&#34;</span> [<span style="color:#a6e22e">tex</span>]
+         <span style="color:#e6db74">&#34;*.tex&#34;</span> <span style="color:#f92672">*&gt;</span> <span style="color:#a6e22e">\out</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">do</span>
+           <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lhs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">replaceExtension</span> <span style="color:#a6e22e">out</span> <span style="color:#e6db74">&#34;lhs&#34;</span>
+           <span style="color:#a6e22e">incl_lhs</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getDirectoryFiles</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">$</span> <span style="color:#a6e22e">dropExtension</span> <span style="color:#a6e22e">out</span> <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;-*.lhs&#34;</span>
+           <span style="color:#a6e22e">need</span> <span style="color:#f92672">$</span> <span style="color:#a6e22e">lhs</span> <span style="color:#66d9ef">:</span> <span style="color:#a6e22e">incl_lhs</span>
+           <span style="color:#a6e22e">system&#39;</span> <span style="color:#e6db74">&#34;lhs2TeX&#34;</span> <span style="color:#f92672">$</span> [<span style="color:#e6db74">&#34;-o&#34;</span>,<span style="color:#a6e22e">out</span>,<span style="color:#a6e22e">lhs</span>]</code></pre></div>
+
+<p>Here are some notes:</p>
+
+<ul>
+<li>the <code>want</code> rule specifies <code>hs-euler.pdf</code> as the target file</li>
+<li>the two <code>*&gt;</code> rules specify how to create pdf and tex files using <code>lhs2TeX</code> and <code>xelatex</code></li>
+<li>the dependencies are specified using the <code>need</code> rule</li>
+</ul>
+
+<p>The chain of dependencies could be visualized like this:
+<code>want hs-euler.pdf → need hs-euler.tex → need [hs-euler.lhs, hs-euler-001.lhs, ...]</code></p>
+
+<p>When you first execute the build program with <code>runhaskell make.hs</code>,
+Shake builds <code>hs-euler.pdf</code> and create the <code>.shake.database</code> file where
+it saves dependencies information.
+In the subsequent executions, Shake uses the information in this file
+to check if some of the dependencies are changed, and eventually
+it triggers a new build.</p>
+
+<h2 id="final-thoughts">Final thoughts</h2>
+
+<p>I was well pleased to use Shake for my automation problem.
+The resulting build file is short and clear, and it makes its jobs well.</p>
+
+<p>But there are some caveats.</p>
+
+<p>I had only a little task to automate and so I haven&rsquo;t used the advanced
+capabilities of Shake.</p>
+
+<p>I used Shake to build documentation, not executables. If you have to
+build Haskell libraries or executables, please take note of what Neil
+Mitchell has to say:</p>
+
+<blockquote>
+<p>If ghc &ndash;make or cabal is capable of building your project, use that instead. Custom build systems are necessary for many complex projects, but many projects are not complex.</p>
+</blockquote>
+
+<p>So if think that Haskell&rsquo;s standard build tools are not enough
+for your project, or if you have to automate some other kind of task,
+I think you should give Shake a try.</p>
+
+<p>You can find the Literate Haskell code of mt-euler on
+<a href="https://github.com/maurotrb/mt-euler">GitHub</a> and on
+<a href="https://bitbucket.org/maurotrb/mt-euler">Bitbucket</a>.</p>
+          </div>
+        </section>
+      </main>
+      
+<aside class="section">
+  <div class="level box">
+    <div class="level-left">
+      
+      <p class="level-item">
+        <a href="https://www.maurotaraborelli.com/blog/2013/02/08/personal-backup-strategy/">
+          <span class="icon is-small">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <span>Personal backup strategy</span>
+        </a>
+      </p>
+      
+    </div>
+    <div class="level-left">
+      
+      <p class="level-item">
+        <a href="https://www.maurotaraborelli.com/blog/2012/04/20/project-euler-in-haskell-4/">
+          <span>Project Euler in Haskell #4</span>
+          <span class="icon is-small">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </a>
+      </p>
+      
+    </div>
+  </div>
+</aside>
+
+    </div>
+    <div class="column">
+      <aside id="sidebar">
+        <section class="section">
+  <div class="level">
+    <div class="level-item">
+      <figure class="image is-128x128 round-portrait">
+        <img src="/img/mauro-taraborelli-portrait-256.jpg" alt="Mauro Taraborelli Portrait">
+      </figure>
+    </div>
+  </div>
+  <div class="level">
+    <div class="level-item">
+      <div class="content">
+        I&rsquo;m <strong>Mauro Taraborelli</strong>, an IT Business Analyst and Project Manager, from Italy. Contact me by <a href="mail:mauro@maurotaraborelli.com">email</a>.
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section" id="tags">
+  <h1 class="title is-6">Explore this site</h1>
+  <div class="tags">
+    
+    <a class="tag is-info is-rounded" href="/tags/programming">Programming (17)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/haskell">Haskell (10)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/quote">Quote (10)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/coursera">Coursera (6)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/mooc">MOOC (6)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/data-science">Data Science (5)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/project-euler">Project Euler (5)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/r">R (5)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/business">Business (4)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/photography">Photography (4)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/ruby">Ruby (3)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/foundation">Foundation (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/hakyll">Hakyll (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/learning">Learning (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/rake">Rake (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/web">Web (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/writing">Writing (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/backup">Backup (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/git">Git (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/imagemagick">Imagemagick (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/jazz">Jazz (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/latex">LaTeX (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/mocc">MOCC (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/management">Management (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/music">Music (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/octopress">Octopress (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/robocopy">Robocopy (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/truecrypt">TrueCrypt (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/unison">Unison (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/xetex">XeTeX (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/edx">edX (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/mr">mr (1)</a>
+    
+    
+  </div>
+</section>
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer" id="site-footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="content has-text-centered is-small">
+              <p>Code examples licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+              <p>Content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+              <p>Source available at <a href="https://github.com/maurotrb/mtsite-17">GitHub</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>Mauro Taraborelli&#39;s Personal Site and Blog</p>
+              <p>
+                <a href="https://www.linkedin.com/in/maurotaraborelli">
+                  <span class="icon">
+                    <i class="fa fa-lg fa-linkedin"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/maurotrb">
+                  <span class="icon">
+                    <i class="fa fa-lg fa-github"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered is-small">
+              <p>Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://bulma.io">Bulma</a></p>
+              <p><a href="//www.iubenda.com/privacy-policy/8268024" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"></script>
+    <script src="/js/mtsite.js"></script>
+  </body>
+</html>

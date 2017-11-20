@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23038857-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23038857-1', { 'anonymize_ip': true });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Photography portfolio site: a new project</title>
+    <meta name="description" content="Mauro Taraborelli&#39;s Personal Site and Blog">
+    <meta name="author" content="Mauro Taraborelli">
+
+    <link rel="stylesheet" href="https://www.maurotaraborelli.com/css/mtsite.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <meta name="generator" content="Hugo 0.30.2" />
+  </head>
+  <body>
+    <header id="site-navbar">
+      <nav class="navbar is-fixed-top container">
+        <div class="navbar-brand">
+          <a class="navbar-item" id="logo" href="">Mauro Taraborelli</a>
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+	    
+	    <a class="navbar-item" href="/blog/">BLOG</a>
+            
+	    <a class="navbar-item" href="/projects/">PROJECTS</a>
+            
+	    <a class="navbar-item" href="/resume/">RESUME</a>
+            
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="https://www.linkedin.com/in/maurotaraborelli">
+              <span class="icon">
+                <i class="fa fa-lg fa-linkedin"></i>
+              </span>
+            </a>
+            <a class="navbar-item" href="https://github.com/maurotrb">
+              <span class="icon">
+                <i class="fa fa-lg fa-github"></i>
+              </span>
+            </a>
+            <div class="navbar-item buttons has-addons">
+              
+              
+              
+              
+              
+              
+              <a class="button is-primary is-outlined" href="/it">
+                <span class="icon is-small">
+                  <i class="fa fa-exchange"></i>
+                </span>
+                <span>Italiano</span>
+                <span class="icon is-small">
+                  <i class="fa fa-globe"></i>
+                </span>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+<div class="container">
+  <div class="columns">
+    <div class="column is-four-fifths">
+      <main class="section">
+        <header>
+          <h1 class="title is-2">Photography portfolio site: a new project</h1>
+          <p class="subtitle is-5">
+            2014-01-30 — Article of 800 words
+            
+            
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/programming">Programming</a>
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/haskell">Haskell</a>
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/hakyll">Hakyll</a>
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/foundation">Foundation</a>
+
+<a class="tag is-rounded" href="https://www.maurotaraborelli.com/tags/photography">Photography</a>
+
+
+
+          </p>
+        </header>
+        <section class="section">
+          <div class="content">
+            <p>I&rsquo;m starting a new project to create a photography portfolio web site and I want to
+document its progress in a series of posts. I&rsquo;ll write them for personal reference,
+but I will be glad if they will be useful for someone else.</p>
+
+<p>This first post is about the rationale for the project and the initial plan.</p>
+
+<p></p>
+
+<h2 id="why-a-photography-portfolio-site">Why a photography portfolio site?</h2>
+
+<p>For me photography is an hobby. But I like to share my work and eventually
+receive feedback on it. This sentiment is so common that the web is flooded
+with images of any kind from photographers and non-photographers.</p>
+
+<p>Sharing your photos has never been so easy. You can share for free on social
+media (Facebook, Google+, Flickr, Instagram, etc.) or with a low entry price
+with more professional solution (SmugMug, zenfolio, etc.).</p>
+
+<p>But&hellip; there&rsquo;s no free lunch.</p>
+
+<p>If you share on social media you agree to loose control on how and with which
+other contents your photos are displayed (read advertising). They could change
+the rules on short notice to better meet their business goals, and you could
+not like the change. See for example the recent Flickr makeover. Some users
+loved it, some others resented it.</p>
+
+<p>There are no such problems if you share on professional sites, given their focus
+on photographers&rsquo; needs. But their entry offers is usually limited in space,
+in number of photos, or in other features. If you want more you have to pay more.
+While this makes sense for pros or semi-pros that earn income from their photos,
+it could be a problem for most amateur photographers.</p>
+
+<p>I used a few of these services and I will continue to use them for the visibility
+that they could give to my photos.
+But I want a stable base to show my photos as I see fit. A base that is relatively
+cheap to create and to maintain and that doesn&rsquo;t change at someone else whim.</p>
+
+<p>I think that the only long term solution is to have my own web site and my own domain.
+(for an in-depth analysis on photographers and the web see
+<a href="http://www.danheller.com/photo-biz.html">Dan Heller&rsquo;s article</a>).</p>
+
+<p>I could have started quickly with a WordPress installation and a specialized
+theme or with some kind of site builder.
+I decided instead to follow a DIY way: building a static web site. In this way
+I can customize the site to my needs and I can start small (less initial cost)
+evolving it gradually. It&rsquo;s challenging, but it could be fun and I will be able
+to follow my geek and my artistic interests at the same time.</p>
+
+<h2 id="how-will-i-build-it">How will I build it?</h2>
+
+<p>When you start a project where you haven&rsquo;t already a good knowledge of the
+technology involved, it is better to make some initial choices, build something
+to test those choices, change what doesn&rsquo;t work, repeat the process.
+Here are my initial choices.</p>
+
+<p>The site will be hosted on <a href="https://www.nearlyfreespeech.net/">NearlyFreeSpeech.NET</a>.
+The site you are reading is hosted there and I never had a problem.
+Moreover their pay as you go rates are perfect for my needs.</p>
+
+<p>I will use <a href="http://jaspervdj.be/hakyll/">Hakyll</a> as static site generator.
+I want to better learn <a href="http://www.haskell.org/">Haskell</a> and I think this is a
+nice way. I hope it will be flexible enough to create a portfolio site.
+<a href="http://octopress.org/">Octopress</a>, the static site generator that I use for this site,
+is more oriented toward personal blog sites. In the ruby camp, I had probably chosen
+<a href="http://nanoc.ws/">nanoc</a>.</p>
+
+<p>I want to design a mobile first site, but I&rsquo;m not much into CSS. So I will use
+a CSS framework and I chose <a href="http://foundation.zurb.com/">Foundation</a>.
+I think it is an easy framework to use and its functionality to manage adaptive
+images is interesting for a portfolio site.</p>
+
+<h2 id="what-are-the-next-steps">What are the next steps?</h2>
+
+<p>My plan is relatively simple. The first few steps of the project are:</p>
+
+<ul>
+<li>setup a basic project structure on github with Hakyll and Foundation configured to generate a bare site (only home page)</li>
+<li>prototype the web site with the main pages and navigation but without real photos</li>
+<li>choose some sample photos from my archives and add them to the prototype</li>
+</ul>
+
+<p>At this point I hope to have clear picture of where to go with the project and
+if my initial choices are valid.</p>
+          </div>
+        </section>
+      </main>
+      
+<aside class="section">
+  <div class="level box">
+    <div class="level-left">
+      
+      <p class="level-item">
+        <a href="https://www.maurotaraborelli.com/blog/2014/04/16/improve-your-jazz-listening-skills/">
+          <span class="icon is-small">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <span>Improve your jazz listening skills</span>
+        </a>
+      </p>
+      
+    </div>
+    <div class="level-left">
+      
+      <p class="level-item">
+        <a href="https://www.maurotaraborelli.com/blog/2013/02/08/personal-backup-strategy/">
+          <span>Personal backup strategy</span>
+          <span class="icon is-small">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </a>
+      </p>
+      
+    </div>
+  </div>
+</aside>
+
+    </div>
+    <div class="column">
+      <aside id="sidebar">
+        <section class="section">
+  <div class="level">
+    <div class="level-item">
+      <figure class="image is-128x128 round-portrait">
+        <img src="/img/mauro-taraborelli-portrait-256.jpg" alt="Mauro Taraborelli Portrait">
+      </figure>
+    </div>
+  </div>
+  <div class="level">
+    <div class="level-item">
+      <div class="content">
+        I&rsquo;m <strong>Mauro Taraborelli</strong>, an IT Business Analyst and Project Manager, from Italy. Contact me by <a href="mail:mauro@maurotaraborelli.com">email</a>.
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section" id="tags">
+  <h1 class="title is-6">Explore this site</h1>
+  <div class="tags">
+    
+    <a class="tag is-info is-rounded" href="/tags/programming">Programming (17)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/haskell">Haskell (10)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/quote">Quote (10)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/coursera">Coursera (6)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/mooc">MOOC (6)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/data-science">Data Science (5)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/project-euler">Project Euler (5)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/r">R (5)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/business">Business (4)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/photography">Photography (4)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/ruby">Ruby (3)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/foundation">Foundation (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/hakyll">Hakyll (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/learning">Learning (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/rake">Rake (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/web">Web (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/writing">Writing (2)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/backup">Backup (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/git">Git (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/imagemagick">Imagemagick (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/jazz">Jazz (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/latex">LaTeX (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/mocc">MOCC (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/management">Management (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/music">Music (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/octopress">Octopress (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/robocopy">Robocopy (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/truecrypt">TrueCrypt (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/unison">Unison (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/xetex">XeTeX (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/edx">edX (1)</a>
+    
+    <a class="tag is-info is-rounded" href="/tags/mr">mr (1)</a>
+    
+    
+  </div>
+</section>
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer" id="site-footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="content has-text-centered is-small">
+              <p>Code examples licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+              <p>Content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+              <p>Source available at <a href="https://github.com/maurotrb/mtsite-17">GitHub</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>Mauro Taraborelli&#39;s Personal Site and Blog</p>
+              <p>
+                <a href="https://www.linkedin.com/in/maurotaraborelli">
+                  <span class="icon">
+                    <i class="fa fa-lg fa-linkedin"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/maurotrb">
+                  <span class="icon">
+                    <i class="fa fa-lg fa-github"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered is-small">
+              <p>Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://bulma.io">Bulma</a></p>
+              <p><a href="//www.iubenda.com/privacy-policy/8268024" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"></script>
+    <script src="/js/mtsite.js"></script>
+  </body>
+</html>

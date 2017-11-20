@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="container">
+  <div class="columns">
+    <div class="column is-four-fifths">
+      <main class="section">
+        <header>
+          <h1 class="title is-2">{{ .Title }}</h1>
+          <p class="subtitle is-5">
+            {{ .Date.Format "2006-01-02" }} — {{ i18n "article_wordcount" . }}
+            {{ if .IsTranslated }}
+            - {{ i18n "translation" }}
+            {{ range .Translations }}
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end}}
+            {{ end }}
+            {{ partial "tagline" .}}
+          </p>
+        </header>
+        <section class="section">
+          <div class="content">
+            {{ .Content }}
+          </div>
+        </section>
+      </main>
+      {{ partial "list-iteration.html" . }}
+    </div>
+    <div class="column">
+      <aside id="sidebar">
+        {{ partial "mini-about.html" . }}
+        {{ partial "explore.html" . }}
+      </aside>
+    </div>
+  </div>
+</div>
+{{ end }}

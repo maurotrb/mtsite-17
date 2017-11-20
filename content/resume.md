@@ -1,0 +1,103 @@
++++
+title       = "Mauro Taraborelli's Resume"
+description = "IT Business Analyst and Project Manager | Dynamics NAV | PMP®"
++++
+
+__Resume available as a [text](/txt/maurotaraborelli-resume.txt) file.__
+
+## __Summary__
+
+IT Business analyst and project manager, specialized in financial accounting
+processes, with more than twenty years' experience in IT industry. Currently
+leading projects and help desk activities on Microsoft Dynamics NAV 2016 with
+one of the biggest Italian Tour Operator. Formerly worked as functional consultant
+and analyst with IT consulting firms and software houses, following the evolution
+and the customization of ERP systems.
+
+Proven track record of successful projects, with high level of autonomy in leading
+project activities, and a strong focus on clients' needs and objectives. Project
+Management Professional (PMP)® certified.
+
+Believes in continuous improvement and learning, as is demonstrated by the completed
+on-line courses on business, statistics, and IT (complete list in the Education section).
+
+## __Experience__
+
+### Feb 2015 → Present • Business Analyst Dynamics NAV Finance • Eden Viaggi • Pesaro, Italy
+
+Responsible for maintenance and evolution of Finance department's IT systems,
+particularly Microsoft Dynamics NAV Finance and Tourism functionality: service
+desk for end users, management of integration with line-of-business systems,
+requirements elicitation from key users, IT vendors coordination, project planning
+and control.
+
+### Sep 2000 → Dec 2014 • IT Analyst and Project Manager • Esa Software • Rimini, Italy
+
+Responsible for delivering software on time, respecting customer requirements,
+and following internal and external standards. Main activities are project planning
+and control, requirements elicitation from customers and product managers, software
+and database analysis, software development coordination, technical and end-user
+documentation writing, training and second tier service for customers and partners.
+
+### Jun 1998 → Aug 2000 • ERP Analyst and Consultant • CSC Italia • Milan, Italy
+
+Responsible for improving customer business processes - accounting, payables,
+receivables - through ERP systems configuration. Main activities were business
+process analysis, ERP system configuration and updating, data migration, end-users
+training and assistance.
+
+### Jun 1996 → May 1998 • Software Quality Assurance • Banksiel • Milan, Italy
+
+Responsible for testing software and for verifying that it has been built according
+to the requirements. Main activities were test cases writing, test data preparation,
+bug filing, assisting quality control team in a system integration environment,
+and assisting business stakeholders in a user acceptance testing environment
+(mainframe environments of a primary Italian financial institution).
+
+## __Certification__
+
+- Jan 2016 • ITIL® 2011 Foundation • APMG International
+- Oct 2014 • Project Management Professional (PMP)® • Project Management Institute, PMI
+
+## __Education__
+
+### 1989 → May 1995 • BS in Business Administration • "Luigi Bocconi" University • Milan, Italy
+
+### 2013 → Present • MOOC (Massive Online Open Courses)
+
+#### Coursera
+
+- Jul → Aug 2013 • Coding the Matrix • Brown University
+- Sep → Oct 2013 • Computing for Data Analysis • Johns Hopkins University
+- Nov → Dec 2013 • Data Analysis • Johns Hopkins University
+- Mar → Apr 2014 • Data Analysis and Statistical Inference • Duke University
+- May 2014 • The Data Scientist's Toolbox • Johns Hopkins University
+- May 2014 • R Programming • Johns Hopkins University
+- May 2014 • Getting and Cleaning Data • Johns Hopkins University
+- Jun 2014 • Exploratory Data Analysis • Johns Hopkins University
+- Jun 2014 • Reproducible Research • Johns Hopkins University
+- Jun 2014 • Statistical Inference • Johns Hopkins University
+- Apr → Jun 2014 • Functional Programming in Scala • EPF de Lausanne
+- Jun → Jul 2014 • Crafting an Effective Writer • Mt. San Jacinto College
+- Apr → May 2015 • Process Mining • Eindhoven University of Technology
+
+#### edX
+
+- 2016 → Present • Microsoft Professional Program for Data Science (in progress)
+  - Data Science Orientation
+  - Querying with Transact-SQL
+  - Analyzing and Visualizing Data with Power BI
+  - Introduction to Python for Data Science
+  - Data Science Essentials
+  - Principles of Machine Learning
+  - Programming with Python for Data Science
+  - Essential Statistics for Data Analysis using Excel
+  - Applied Machine Learning
+
+#### Iversity
+
+- Jan → Feb 2015 • Business Analysis 101 • Procurro
+
+#### Queensland University of Technology (QUT) Open Online Learning
+
+- Oct → Nov 2015 • Fundamentals of BPM • QUT Open Online Learning

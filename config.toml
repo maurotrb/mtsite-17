@@ -1,3 +1,53 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://www.maurotaraborelli.com/"
+defaultContentLanguage = "en"
+title = "Mauro Taraborelli"
+preserveTaxonomyNames = true
+enableMissingTranslationPlaceholders = true
+
+[params]
+author = "Mauro Taraborelli"
+
+[permalinks]
+  blog = "/:section/:year/:month/:day/:slug/"
+
+[languages]
+
+[languages.en]
+languageCode = "en"
+languageName = "English"
+description = "Mauro Taraborelli's Personal Site and Blog"
+[languages.en.taxonomies]
+tag = "tags"
+[[languages.en.menu.main]]
+name = "blog"
+identifier = "blog"
+url = "/blog/"
+weight = 1
+[[languages.en.menu.main]]
+name = "projects"
+url = "/projects/"
+weight = 2
+[[languages.en.menu.main]]
+name = "resume"
+url = "/resume/"
+weight = 3
+
+[languages.it]
+languageCode = "it"
+languageName = "Italiano"
+description = "Sito personale e blog di Mauro Taraborelli"
+[languages.it.taxonomies]
+etichetta = "etichette"
+[[languages.it.menu.main]]
+name = "blog"
+identifier = "blog"
+url = "/it/blog"
+weight = 1
+[[languages.it.menu.main]]
+name = "progetti"
+url = "/it/projects"
+weight = 2
+[[languages.it.menu.main]]
+name = "cv"
+url = "/it/resume"
+weight = 3

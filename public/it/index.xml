@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mauro Taraborelli</title>
+    <link>https://www.maurotaraborelli.com/it/</link>
+    <description>Recent content on Mauro Taraborelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Tue, 10 Apr 2012 12:59:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.maurotaraborelli.com/it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HaskDeep</title>
+      <link>https://www.maurotaraborelli.com/it/projects/haskdeep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/projects/haskdeep/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://hackage.haskell.org/package/haskdeep&#34; title=&#34;haskdeep on hackagedb&#34;&gt;HaskDeep&lt;/a&gt;
+è un programma a linea di comando, scritto in Haskell, che calcola l&amp;rsquo;&lt;em&gt;hash&lt;/em&gt; dei
+file scorrendo una struttura di directory in modo ricorsivo.
+Gli &lt;em&gt;hash&lt;/em&gt; calcolati sono salvati su un file e possono essere usati per verificare
+l&amp;rsquo;integrita del file originale o di una sua copia.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Progetto Eulero in Haskell #2</title>
+      <link>https://www.maurotaraborelli.com/it/blog/2012/04/10/progetto-eulero-in-haskell-2/</link>
+      <pubDate>Tue, 10 Apr 2012 12:59:00 +0200</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/blog/2012/04/10/progetto-eulero-in-haskell-2/</guid>
+      <description>&lt;h2 id=&#34;descrizione-del-problema&#34;&gt;Descrizione del problema&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://projecteuler.net/problem=2&#34;&gt;Link al problema 2 del Progetto Eulero&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ogni nuovo elemento nella sequenza di Fibonacci è generato sommando i due elementi precedenti.
+Iniziando con 1 e 2, i primi 10 elementi saranno: 1,2,3,5,8,13,21,34,55,89, &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Considerando gli elementi nella sequenza di Fibonacci i cui valori non eccedono
+i quattro milioni, trovare la somma degli elementi pari.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ATTENZIONE&lt;/strong&gt;
+&lt;em&gt;I prossimi paragrafi contengono la soluzione. Non leggete oltre se volere avere i benefici
+del Progetto Eulero e non avete ancora risolto il problema.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CV di Mauro Taraborelli</title>
+      <link>https://www.maurotaraborelli.com/it/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.maurotaraborelli.com/it/resume/</guid>
+      <description>CV disponibile come file di testo.
+Profilo Sono un business analyst e project manager IT specializzato nei processi di amministrazione, finanza e controllo con più di venti anni di esperienza nel settore IT. Attualmente mi occupo di progetti e di assistenza nell&amp;rsquo;ambito dei moduli Finance di Microsoft Dynamics NAV 2016 presso uno dei principali Tour Operator Italiani. In precedenza ho lavorato per società di consulenza IT e software house come consulente applicativo e analista funzionale per l&amp;rsquo;evoluzione e la personalizzazione di sistemi gestionali ERP.</description>
+    </item>
+    
+  </channel>
+</rss>
