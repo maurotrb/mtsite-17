@@ -1,7 +1,7 @@
 +++
 title     = "Photos for Web"
 date      = "2011-09-18T00:00:00+02:00"
-tags      = [ "Photography", "Web", "Rake", "Ruby", "Imagemagick" ]
+tags      = [ "Photography", "Web", "Rake", "Ruby", "Imagemagick", "Exiftool" ]
 +++
 
 A set of rake tasks to prepare photos for the web using exiftool and Imagemagick.
