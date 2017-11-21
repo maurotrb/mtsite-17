@@ -16,10 +16,8 @@
     <title>{{ .Title }}</title>
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/mtsite.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
     {{ .Hugo.Generator }}
   </head>
@@ -27,7 +25,7 @@
     <header id="site-navbar">
       <nav class="navbar is-fixed-top container">
         <div class="navbar-brand">
-          <a class="navbar-item" id="logo" href="{{ .Site.LanguagePrefix }}">{{ .Site.Title }}</a>
+          <a class="navbar-item" id="logo" href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}">{{ .Site.Title }}</a>
           <button class="button navbar-burger" data-target="navMenu">
             <span></span>
             <span></span>
