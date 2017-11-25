@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/mtsite.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+    {{ range .Translations }}<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />{{ end }}
     {{ .Hugo.Generator }}
   </head>
   <body>
