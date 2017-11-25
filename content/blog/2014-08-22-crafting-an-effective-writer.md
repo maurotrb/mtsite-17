@@ -13,6 +13,7 @@ The course goal is "to become an effective builder of sentences using the basic
 tools of grammar, punctuation, and writing". It is designed for American high school
 and college students, but even for global community members. I recommend it to
 anyone who wants to become a better writer. A new session will be available in September 2014.
+
 <!--more-->
 ## How the course is organized
 
