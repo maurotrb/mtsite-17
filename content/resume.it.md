@@ -6,26 +6,29 @@ description = "Business Analyst e Project Manager IT | Dynamics NAV | PMP®"
 __CV disponibile come [file di testo](/txt/maurotaraborelli-cv.txt).__
 
 ## __Profilo__
-Sono un business analyst e project manager IT specializzato nei processi di amministrazione,
-finanza e controllo con più di venti anni di esperienza nel settore IT. Attualmente
-mi occupo di progetti e di assistenza nell'ambito dei moduli Finance di Microsoft
-Dynamics NAV 2016 presso uno dei principali Tour Operator Italiani. In precedenza
-ho lavorato per società di consulenza IT e software house come consulente applicativo
-e analista funzionale per l'evoluzione e la personalizzazione di sistemi gestionali ERP.
 
-Gestisco le attività di progetto in autonomia, coordinando ed organizzando le risorse
-coinvolte, e sono focalizzato sugli obiettivi e sulle esigenze del cliente, come
-dimostrato dai molti progetti completati con successo nel corso degli anni.
-Questa esperienza mi ha permesso di conseguire la certificazione Project Management
-Professional (PMP), una delle più importanti a livello mondiale.
+Sono un business analyst e project manager IT specializzato nei processi di amministrazione,
+finanza e controllo con più di venti anni di esperienza nel settore IT. Attualmente lavoro
+come consulente senior Dynamics 365 Business Central per uno dei principali partner Microsoft
+italiani. In precedenza ho lavorato per società di consulenza IT e software house come
+consulente applicativo e analista funzionale per l'evoluzione e la personalizzazione di
+sistemi gestionali ERP.
+
+Gestisco le attività di progetto in autonomia, coordinando ed organizzando le risorse coinvolte,
+e sono focalizzato sugli obiettivi e sulle esigenze del cliente, come dimostrato dai molti
+progetti completati con successo nel corso degli anni. Questa esperienza mi ha permesso di
+conseguire la certificazione Project Management Professional (PMP)®, una delle più importanti
+a livello mondiale.
 
 Tengo molto all'aggiornamento tecnologico e professionale, per questo seguo periodicamente
-corsi on-line per migliorare le mie conoscenze in ambito economico, statistico
-ed informatico. Se siete interessati potete trovare l'elenco completo nella sezione Educazione.
+corsi on-line per migliorare le mie conoscenze in ambito economico, statistico ed informatico.
+Se siete interessati potete trovare l'elenco completo nella sezione corsi.
 
 ## __Esperienza__
 
-### Feb 2015 → oggi • Business Analyst Dynamics NAV Finance • Eden Viaggi • Pesaro
+### Lug 2018 → oggi • Consulente Senior Dynamics 365 Business Central • Alterna • Bologna
+
+### Feb 2015 → Giu 2018 • Business Analyst Dynamics NAV Finance • Eden Viaggi • Pesaro
 
 Responsabile della manutenzione e dell'evoluzione dei sistemi IT dell'area AFC,
 in particolare dei moduli Finance e Turismo di Microsoft Dynamics NAV: assistenza
