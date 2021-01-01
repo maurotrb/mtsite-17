@@ -10,6 +10,7 @@
 
       gtag('config', 'UA-23038857-1', { 'anonymize_ip': true });
     </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,6 @@
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/mtsite.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
@@ -46,12 +46,12 @@
           <div class="navbar-end">
             <a class="navbar-item" href="https://www.linkedin.com/in/maurotaraborelli">
               <span class="icon">
-                <i class="fa fa-lg fa-linkedin"></i>
+                <i class="fab fa-lg fa-linkedin-in"></i>
               </span>
             </a>
             <a class="navbar-item" href="https://github.com/maurotrb">
               <span class="icon">
-                <i class="fa fa-lg fa-github"></i>
+                <i class="fab fa-lg fa-github"></i>
               </span>
             </a>
             <div class="navbar-item buttons has-addons">
@@ -61,11 +61,11 @@
               {{ else }}
               <a class="button is-primary is-outlined" href="/{{ .Lang }}">
                 <span class="icon is-small">
-                  <i class="fa fa-exchange"></i>
+                  <i class="fas fa-exchange-alt"></i>
                 </span>
                 <span>{{ .LanguageName }}</span>
                 <span class="icon is-small">
-                  <i class="fa fa-globe"></i>
+                  <i class="fas fa-globe"></i>
                 </span>
               </a>
               {{ end }}
@@ -95,12 +95,12 @@
               <p>
                 <a href="https://www.linkedin.com/in/maurotaraborelli">
                   <span class="icon">
-                    <i class="fa fa-lg fa-linkedin"></i>
+                    <i class="fab fa-lg fa-linkedin-in"></i>
                   </span>
                 </a>
                 <a href="https://github.com/maurotrb">
                   <span class="icon">
-                    <i class="fa fa-lg fa-github"></i>
+                    <i class="fab fa-lg fa-github"></i>
                   </span>
                 </a>
               </p>
