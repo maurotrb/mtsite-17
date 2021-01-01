@@ -3,6 +3,7 @@
 #========================
 
 css-prereq = ./src/sass/mtsite.sass
+# Dart Saas
 css-proc   = sass
 css-target = ./static/css/mtsite.min.css
 public-dir = ./public
@@ -12,27 +13,27 @@ site-proc  = hugo -v
 all: site
 
 $(css-target): $(css-prereq)
-	@echo "Creating minified css file...\t\t\c"
-	@$(css-proc) -t compressed $(css-prereq):$(css-target)
-	@echo "[ Done ]"
+	@echo -e "Creating minified css file...\t\t\c"
+	@$(css-proc) -s compressed $(css-prereq):$(css-target)
+	@echo -e "[ Done ]"
 
 site: $(css-target)
-	@echo "Removing public dir...\t\t\t\c"
+	@echo -e "Removing public dir...\t\t\t\c"
 	@rm -rf $(public-dir)
-	@echo "[ Done ]"
-	@echo "Creating site..."
+	@echo -e "[ Done ]"
+	@echo -e "Creating site..."
 	@$(site-proc)
-	@echo "Site created."
+	@echo -e "Site created."
 
 deploy: site
-	@echo "Deploying site to S3...\t\t\c"
+	@echo -e "Deploying site to S3...\t\t\c"
 	@aws s3 sync public/ s3://$(s3-bucket)/ --profile maurotaraborellisite --acl public-read --storage-class REDUCED_REDUNDANCY --delete
-	@echo "[Done]"
+	@echo -e "[Done]"
 
 clean:
-	@echo "Removing public dir...\t\t\t\c"
+	@echo -e "Removing public dir...\t\t\t\c"
 	@rm -rf $(public-dir)
-	@echo "[ Done ]"
-	@echo "Removing generated css file...\t\t\c"
+	@echo -e "[ Done ]"
+	@echo -e "Removing generated css file...\t\t\c"
 	@rm -f $(css-target)*
-	@echo "[ Done ]"
+	@echo -e "[ Done ]"
