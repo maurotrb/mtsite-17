@@ -3,25 +3,27 @@ IT Business Analyst and Project Manager | Dynamics NAV | PMP®
 
 Summary
 =======
-IT Business analyst and project manager, specialized in financial accounting
-processes, with more than twenty years' experience in IT industry. Currently
-leading projects and help desk activities on Microsoft Dynamics NAV 2016 with
-one of the biggest Italian Tour Operator. Formerly worked as functional consultant
-and analyst with IT consulting firms and software houses, following the evolution
-and the customization of ERP systems.
+IT business analyst and project manager, specialized in financial accounting processes,
+with more than twenty years' experience in IT industry. Currently working as Dynamics
+365 Business Central Senior Consultant for one of the primary Italian Microsoft partner.
 
-Proven track record of successful projects, with high level of autonomy in leading
-project activities, and a strong focus on clients' needs and objectives. Project
-Management Professional (PMP)® certified.
+Formerly worked as functional consultant and analyst with IT consulting firms and software
+houses, following the evolution and the customization of ERP systems. Proven track record
+of successful projects, with high level of autonomy in leading project activities, and
+a strong focus on clients' needs and objectives. Project Management Professional (PMP)®
+certified.
 
 Believes in continuous improvement and learning, as is demonstrated by the completed
-on-line courses on business, statistics, and IT (complete list in the Education section).
+on-line courses on business, statistics, and IT (complete list in the Courses section).
 
 Experience
 ==========
 
-Feb 2015 → Present • Business Analyst Dynamics NAV Finance • Eden Viaggi • Pesaro, Italy
-----------------------------------------------------------------------------------------
+Jul 2018 → Present • Senior Cons. Dynamics 365 Business Central • Alterna • Bologna, Italy
+------------------------------------------------------------------------------------------
+
+Feb 2015 → Jun 2018 • Business Analyst Dynamics NAV Finance • Eden Viaggi • Pesaro, Italy
+-----------------------------------------------------------------------------------------
 Responsible for maintenance and evolution of Finance department's IT systems,
 particularly Microsoft Dynamics NAV Finance and Tourism functionality: service
 desk for end users, management of integration with line-of-business systems,
