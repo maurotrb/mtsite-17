@@ -9,6 +9,8 @@ Some days ago I published this web site. Now I want to share
 some information on why and how I made it.
 
 <!--more-->
+__Warning! This post is obsolete. The web site you are reading is no more made with Octopress.__
+
 ## Why I made it
 I want to use a personal web site as:
 

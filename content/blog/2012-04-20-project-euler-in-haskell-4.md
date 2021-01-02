@@ -4,13 +4,15 @@ date       = "2012-04-20T13:47:00+02:00"
 type       = "article"
 tags       = [ "Programming", "Haskell", "Project Euler" ]
 slug       = "project-euler-in-haskell-4"
+katex      = "true"
+markup     = "mmark"
 +++
 
 ## Problem Description
 [Link to Project Euler problem 4](http://projecteuler.net/problem=4)
 
 A palindromic number reads the same both ways. The largest palindrome made
-from the product of two 2-digit numbers is \\(9009=91\times99\\).
+from the product of two 2-digit numbers is $$9009=91\times99$$.
 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
@@ -58,15 +60,11 @@ Moreover, if we express the palindromes as a six terms multi-variable polynomial
 after some simplifications we find out that all the palindromes of 6-digit
 are divisible by 11.
 
-<div>
-\[
-\begin{align*}
-P&=100000x+10000y+1000z+100z+10y+x\\
-P&=100001x+10010y+1100z\\
-P&=11(9091x+910y+100z)
-\end{align*}
-\]
-</div>
+$$
+P=100000x+10000y+1000z+100z+10y+x\\
+P=100001x+10010y+1100z\\
+P=11(9091x+910y+100z)
+$$
 
 We can filter the potential palindromes to only include the products
 where at least one of the terms is divisible by 11.

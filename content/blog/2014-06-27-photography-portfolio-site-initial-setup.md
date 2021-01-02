@@ -27,7 +27,7 @@ so I set up a proper Haskell project:
 
 * creating a [cabalized project](http://www.haskell.org/haskellwiki/How_to_write_a_Haskell_program#Add_a_build_system)
   with `cabal init`, setting up Hakyll as a dependency, and creating a source
-  file with an empty Main function
+  file with an empty `Main` function
 * creating a [sandbox](http://chromaticleaves.com/posts/cabal-sandbox-workflow.html)
   to work in a isolated environment with `cabal sandbox init`
 * installing all the dependencies in the sandbox with `cabal install --only-dependencies`

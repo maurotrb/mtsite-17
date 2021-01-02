@@ -3,6 +3,7 @@ title      = "Improve your jazz listening skills"
 date       = "2014-04-16T00:08:59+02:00"
 type       = "article"
 tags       = [ "MOCC", "edX", "Music", "Jazz" ]
+slug       = "improve-your-jazz-listening-skills"
 +++
 
 ## A MOOC on Jazz from University of Texas at Austin

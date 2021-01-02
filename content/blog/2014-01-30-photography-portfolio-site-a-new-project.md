@@ -3,6 +3,7 @@ title      = "Photography portfolio site: a new project"
 date       = "2014-01-30T14:21:36+01:00"
 type       = "article"
 tags       = [ "Programming", "Haskell", "Hakyll", "Foundation", "Photography" ]
+slug       = "photography-portfolio-site-a-new-project"
 +++
 
 I'm starting a new project to create a photography portfolio web site and I want to

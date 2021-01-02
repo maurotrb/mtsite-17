@@ -16,8 +16,8 @@ Considerando gli elementi nella sequenza di Fibonacci i cui valori non eccedono
 i quattro milioni, trovare la somma degli elementi pari.
 
 __ATTENZIONE__
-_I prossimi paragrafi contengono la soluzione. Non leggete oltre se volere avere i benefici
-del Progetto Eulero e non avete ancora risolto il problema._
+_I prossimi paragrafi contengono la soluzione. Non leggere oltre se vuoi avere i benefici
+del Progetto Eulero e non hai ancora risolto il problema._
 
 <!--more-->
 ## Soluzione
@@ -37,5 +37,5 @@ filtrare quelli pari e sommare il risultato.
 solution = (sum . filter even . takeWhile (<4000001)) fibs
 {{< /highlight >}}
 
-Potete trovare il codice in _Literate Haskell_ su [GitHub](https://github.com/maurotrb/mt-euler)
+Puoi trovare il codice in _Literate Haskell_ su [GitHub](https://github.com/maurotrb/mt-euler)
 e su [Bitbucket](https://bitbucket.org/maurotrb/mt-euler).
