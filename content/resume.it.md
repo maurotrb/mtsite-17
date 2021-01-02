@@ -1,6 +1,7 @@
 +++
 title       = "CV di Mauro Taraborelli"
 description = "Business Analyst e Project Manager IT | Dynamics NAV | PMP®"
+slug        = "cv"
 +++
 
 __CV disponibile come [file di testo](/txt/maurotaraborelli-cv.txt).__

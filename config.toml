@@ -45,9 +45,9 @@ url = "/it/blog"
 weight = 1
 [[languages.it.menu.main]]
 name = "progetti"
-url = "/it/projects"
+url = "/it/progetti"
 weight = 2
 [[languages.it.menu.main]]
 name = "cv"
-url = "/it/resume"
+url = "/it/cv"
 weight = 3
