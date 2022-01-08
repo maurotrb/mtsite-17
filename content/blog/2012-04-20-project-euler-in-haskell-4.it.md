@@ -5,7 +5,6 @@ type       = "article"
 etichette  = [ "Programmazione", "Haskell", "Progetto Eulero" ]
 slug       = "progetto-eulero-in-haskell-4"
 katex      = "true"
-markup     = "mmark"
 +++
 
 ## Descrizione del problema
@@ -13,7 +12,7 @@ markup     = "mmark"
 
 Un numero palindromo si legge nello stesso modo sia da destra che da sinistra.
 Il più grande numero palindromo calcolato come prodotto di due numeri a due cifre è
-$$9009=91\times99$$.
+$9009=91\times99$.
 
 Trova il più grande numero palindromo calcolato dal prodotto di due numeri a tre cifre.
 
@@ -62,8 +61,12 @@ dopo qualche semplificazione troviamo che tutti i palindromi di sei cifre
 sono divisibili per 11.
 
 $$
-P=100000x+10000y+1000z+100z+10y+x\\
-P=100001x+10010y+1100z\\
+P=100000x+10000y+1000z+100z+10y+x
+$$
+$$
+P=100001x+10010y+1100z
+$$
+$$
 P=11(9091x+910y+100z)
 $$
 

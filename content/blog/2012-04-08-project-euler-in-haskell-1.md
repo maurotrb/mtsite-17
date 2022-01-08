@@ -5,7 +5,6 @@ type       = "article"
 tags       = [ "Programming", "Haskell", "Project Euler" ]
 slug       = "project-euler-in-haskell-1"
 katex      = "true"
-markup     = "mmark"
 +++
 
 ## Problem Description
@@ -41,11 +40,13 @@ solution'  =  sum [n | n <- [1..999], n `mod` 3 == 0]  +
 Noting that:
 
 $$
-3+6+9+12+15+\dots+999 = 3\times(1+2+3+4+\dots+333)\\
+3+6+9+12+15+\dots+999 = 3\times(1+2+3+4+\dots+333)
+$$
+$$
 5+10+15+\dots+995 = 5\times(1+2+\dots+199)
 $$
 
-where $$333=\frac{999}{3}$$ and $$199=\frac{995}{5}$$ but also $$\frac{999}{5}$$
+where $333=\frac{999}{3}$ and $199=\frac{995}{5}$ but also $\frac{999}{5}$
 rounded down to the nearest integer.
 
 And that from the expression for

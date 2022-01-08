@@ -5,7 +5,6 @@ type       = "article"
 etichette  = [ "Programmazione", "Haskell", "Progetto Eulero" ]
 slug       = "progetto-eulero-in-haskell-1"
 katex      = "true"
-markup     = "mmark"
 +++
 
 ## Descrizione del problema
@@ -41,11 +40,13 @@ solution'  =  sum [n | n <- [1..999], n `mod` 3 == 0]  +
 Notando che:
 
 $$
-3+6+9+12+15+\dots+999 = 3\times(1+2+3+4+\dots+333)\\
+3+6+9+12+15+\dots+999 = 3\times(1+2+3+4+\dots+333)
+$$
+$$
 5+10+15+\dots+995 = 5\times(1+2+\dots+199)
 $$
 
-dove $$333=\frac{999}{3}$$ and $$199=\frac{995}{5}$$ but also $$\frac{999}{5}$$
+dove $333=\frac{999}{3}$ and $199=\frac{995}{5}$ but also $\frac{999}{5}$
 arrotondato per difetto all'intero più vicino.
 
 E dall'espressione per le
