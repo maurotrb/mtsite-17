@@ -8,7 +8,7 @@ css-proc   = sass
 css-target = ./static/css/mtsite.min.css
 public-dir = ./public
 s3-bucket  = www.maurotaraborelli.com
-site-proc  = hugo -v
+site-proc  = hugo --logLevel info
 
 all: site
 

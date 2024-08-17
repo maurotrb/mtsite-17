@@ -15,6 +15,7 @@ author = "Mauro Taraborelli"
 [languages.en]
 languageCode = "en"
 languageName = "English"
+[languages.en.params]
 description = "Mauro Taraborelli's Personal Site and Blog"
 [languages.en.taxonomies]
 tag = "tags"
@@ -35,6 +36,7 @@ weight = 3
 [languages.it]
 languageCode = "it"
 languageName = "Italiano"
+[languages.it.params]
 description = "Sito personale e blog di Mauro Taraborelli"
 [languages.it.taxonomies]
 etichetta = "etichette"
